@@ -10,7 +10,7 @@ Authors@R: c(
            comment = c(ORCID = "0000-0002-7779-481X")))
 Description: A paragraph providing a full description of the project (on 
     several lines...)
-URL: https://github.com/avallecam/rcompendiumtest5
+URL: https://github.com/avallecam/rcompendiumtest5, https://avallecam.github.io/rcompendiumtest5/
 BugReports: https://github.com/avallecam/rcompendiumtest5/issues
 License: GPL (>= 2)
 Encoding: UTF-8
