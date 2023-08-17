@@ -31,7 +31,9 @@ Research Compendium of the project **{{ PLEASE ADD A FEW WORDS }}**
 
 Please cite this compendium as: 
 
-> **{{ PLEASE ADD A CITATION }}**
+```{r}
+readCitationFile(file = "inst/CITATION")
+```
 
 
 

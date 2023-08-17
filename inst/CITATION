@@ -1,0 +1,10 @@
+citHeader("To cite rcompendiumtest5 in publications use:")
+
+bibentry(
+  bibtype = "Manual",
+  title   = "rcompendiumtest5: {An} {R} package to ...",
+  author  = c(person("Valle-Campos Andree")),
+  year    = "2023",
+  note    = "R package version 0.0.0.9000",
+  url     = "https://github.com/avallecam/rcompendiumtest5"
+)
