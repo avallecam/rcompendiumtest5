@@ -69,9 +69,7 @@ main R script to run the entire project by calling each R script stored in the `
 
 ### Usage
 
-First, [clone the repository](https://www.epirhandbook.com/en/version-control-and-collaboration-with-git-and-github.html?q=clone#clone-from-a-github-repository).
-
-Then, to reproduce all the outputs, open R/RStudio and run:
+First, [clone the repository](https://www.epirhandbook.com/en/version-control-and-collaboration-with-git-and-github.html?q=clone#clone-from-a-github-repository). Then, to reproduce all the outputs, open R/RStudio and run:
 
 ```{r eval = FALSE}
 source("make.R")
