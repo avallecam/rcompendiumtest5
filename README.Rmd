@@ -29,12 +29,7 @@ Research Compendium of the project on Open science, Reproducible research and Su
 
 ### How to cite
 
-Please cite this compendium as: 
-
-```{r}
-readCitationFile(file = "inst/CITATION")
-```
-
+Please cite this compendium as **{{ADD CITATION}}**
 
 
 ### Content

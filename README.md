@@ -16,27 +16,7 @@ packages.
 
 ### How to cite
 
-Please cite this compendium as:
-
-``` r
-readCitationFile(file = "inst/CITATION")
-#> 
-#> To cite rcompendiumtest5 in publications use:
-#> 
-#>   Valle-Campos Andree (2023). _rcompendiumtest5: An R package to ..._.
-#>   R package version 0.0.0.9000,
-#>   <https://github.com/avallecam/rcompendiumtest5>.
-#> 
-#> A BibTeX entry for LaTeX users is
-#> 
-#>   @Manual{,
-#>     title = {rcompendiumtest5: {An} {R} package to ...},
-#>     author = {{Valle-Campos Andree}},
-#>     year = {2023},
-#>     note = {R package version 0.0.0.9000},
-#>     url = {https://github.com/avallecam/rcompendiumtest5},
-#>   }
-```
+Please cite this compendium as **{{ADD CITATION}}**
 
 ### Content
 
