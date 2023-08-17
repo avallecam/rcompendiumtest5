@@ -10,7 +10,9 @@
 [![Dependencies](https://img.shields.io/badge/dependencies-2/95-green?style=flat)](#)
 <!-- badges: end -->
 
-Research Compendium of the project **{{ PLEASE ADD A FEW WORDS }}**
+Research Compendium of the project on Open science, Reproducible
+research and Sustainability of code for epidemic analysis with R
+packages.
 
 ### How to cite
 
@@ -69,7 +71,6 @@ This repository is structured as follow:
 
 First, [clone the
 repository](https://www.epirhandbook.com/en/version-control-and-collaboration-with-git-and-github.html?q=clone#clone-from-a-github-repository).
-
 Then, to reproduce all the outputs, open R/RStudio and run:
 
 ``` r
