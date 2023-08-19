@@ -3,12 +3,14 @@
 #' {incidence2} https://www.reconverse.org/incidence2/
 #' {cfr} https://epiverse-trace.github.io/cfr/
 #' {epiparameter} https://epiverse-trace.github.io/epiparameter/
+#' {writexl} https://docs.ropensci.org/writexl/
 
 # Load packages
 library(tidyverse)
 library(incidence2)
 library(epiparameter)
 library(cfr)
+library(writexl)
 
 # Read data
 ebola_dat <- read_rds("data/derived-data/linelist_clean.rds")
@@ -80,8 +82,9 @@ ebola_prepare %>% as_tibble()
 
 # Estimate static CFR -----------------------------------------------------
 
-cfr::estimate_static(data = ebola_prepare)
+ebola_cfr <- cfr::estimate_static(data = ebola_prepare)
 
+ebola_cfr
 
 # Correct static CFR by delays --------------------------------------------
 
@@ -102,8 +105,24 @@ onset_to_death_ebola
 
 # Estimate CFR corrected by delay -----------------------------------------
 
-cfr::estimate_static(
-  data = ebola_prepare,
-  correct_for_delays = TRUE,
-  epidist = onset_to_death_ebola
-)
+ebola_cfr_correct <- 
+  
+  cfr::estimate_static(
+    data = ebola_prepare,
+    correct_for_delays = TRUE,
+    epidist = onset_to_death_ebola
+  )
+
+ebola_cfr_correct
+
+## Create output table -----------------------------------------------------
+
+cfr_table <- 
+  bind_rows(
+    "without delay correction"=ebola_cfr,
+    "with delay correction" = ebola_cfr_correct, 
+    .id = "cfr"
+  )
+
+cfr_table %>% 
+  writexl::write_xlsx("outputs/03-estimate_cfr.xlsx")
