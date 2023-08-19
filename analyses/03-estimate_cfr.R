@@ -125,4 +125,7 @@ cfr_table <-
   )
 
 cfr_table %>% 
+  write_rds("outputs/03-estimate_cfr.rds")
+
+cfr_table %>% 
   writexl::write_xlsx("outputs/03-estimate_cfr.xlsx")
