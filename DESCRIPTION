@@ -25,3 +25,4 @@ Imports:
 Remotes:
     epiverse-trace/cfr,
     epiverse-trace/epiparameter
+Config/Needs/website: rmarkdown
