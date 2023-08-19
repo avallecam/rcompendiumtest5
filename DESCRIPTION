@@ -16,7 +16,11 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Imports: 
+    cfr,
     devtools,
+    epiparameter,
     here,
+    incidence2,
     readxl,
-    tidyverse
+    tidyverse,
+    writexl
