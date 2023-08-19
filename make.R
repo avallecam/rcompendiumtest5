@@ -29,3 +29,7 @@ devtools::load_all(here::here())
 
 # List all R scripts in a sequential order and using the following form:
 # source(here::here("analyses", "script_X.R"))
+
+source(here::here("analyses", "01-read_data.R"))
+source(here::here("analyses", "02-plot_incidence.R"))
+source(here::here("analyses", "03-estimate_cfr.R"))
