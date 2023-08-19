@@ -16,7 +16,20 @@ packages.
 
 ### How to cite
 
-Please cite this compendium as **{{ADD CITATION}}**
+Please cite this compendium as in [Citing
+rcompendiumtest5](https://avallecam.github.io/rcompendiumtest5/authors.html#citation).
+
+    #> <p>Valle-Campos A (2023).
+    #> <em>rcompendiumtest5: Research Compendium for Sustainable Analysis</em>.
+    #> https://github.com/avallecam/rcompendiumtest5, https://avallecam.github.io/rcompendiumtest5/. 
+    #> </p>
+
+    #> @Manual{,
+    #>   title = {rcompendiumtest5: Research Compendium for Sustainable Analysis},
+    #>   author = {Andree Valle-Campos},
+    #>   year = {2023},
+    #>   note = {https://github.com/avallecam/rcompendiumtest5, https://avallecam.github.io/rcompendiumtest5/},
+    #> }
 
 ### Content
 

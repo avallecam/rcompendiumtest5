@@ -29,7 +29,15 @@ Research Compendium of the project on Open science, Reproducible research and Su
 
 ### How to cite
 
-Please cite this compendium as **{{ADD CITATION}}**
+Please cite this compendium as in [Citing rcompendiumtest5](https://avallecam.github.io/rcompendiumtest5/authors.html#citation).
+
+```{r,echo=FALSE}
+cat(pkgdown:::data_citations()$html)
+```
+
+```{r,echo=FALSE}
+cat(pkgdown:::data_citations()$bibtex)
+```
 
 
 ### Content
