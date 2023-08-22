@@ -13,19 +13,15 @@ knitr::opts_chunk$set(
 library(tidyverse)
 ```
 
-```{r}
-getwd()
-```
-
-```{r}
+```{r,echo=FALSE}
 # locations wrt articles folder
-fs::dir_copy(path = "../../figures/", new_path = "img/", overwrite = TRUE)
+fs::dir_copy(path = "../../figures/", new_path = "figures/", overwrite = TRUE)
 ```
 
 my text
 
 ```{r,error=TRUE}
-knitr::include_graphics("img/02-plot_incidence.png")
+knitr::include_graphics("figures/02-plot_incidence.png")
 ```
 
 ```{r}
