@@ -93,25 +93,16 @@
 <span><span class="co">#&gt; <span style="color: #BB0000;">✖</span> <span style="color: #0000BB;">dplyr</span>::<span style="color: #00BB00;">lag()</span>    masks <span style="color: #0000BB;">stats</span>::lag()</span></span>
 <span><span class="co">#&gt; <span style="color: #00BBBB;">ℹ</span> Use the conflicted package (<span style="color: #0000BB; font-style: italic;">&lt;http://conflicted.r-lib.org/&gt;</span>) to force all conflicts to become errors</span></span></code></pre></div>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">here</span><span class="fu">::</span><span class="fu"><a href="https://here.r-lib.org//reference/here.html" class="external-link">here</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "/home/runner/work/rcompendiumtest5/rcompendiumtest5"</span></span></code></pre></div>
-<p>my text</p>
-<div class="figure">
-<img src="../../figures/02-plot_incidence.png" alt=""><p class="caption">incidence plot</p>
-</div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/getwd.html" class="external-link">getwd</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "/home/runner/work/rcompendiumtest5/rcompendiumtest5/vignettes/articles"</span></span></code></pre></div>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html" class="external-link">include_graphics</a></span><span class="op">(</span><span class="fu">here</span><span class="fu">::</span><span class="fu"><a href="https://here.r-lib.org//reference/here.html" class="external-link">here</a></span><span class="op">(</span><span class="st">"figures/02-plot_incidence.png"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
-<p><img src="../../figures/02-plot_incidence.png"><!-- --></p>
+<code class="sourceCode R"><span><span class="co"># locations wrt articles folder</span></span>
+<span><span class="fu">fs</span><span class="fu">::</span><span class="fu"><a href="https://fs.r-lib.org/reference/copy.html" class="external-link">dir_copy</a></span><span class="op">(</span>path <span class="op">=</span> <span class="st">"../../figures/"</span>, new_path <span class="op">=</span> <span class="st">"img/"</span>, overwrite <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
+<p>my text</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html" class="external-link">include_graphics</a></span><span class="op">(</span><span class="fu">here</span><span class="fu">::</span><span class="fu"><a href="https://here.r-lib.org//reference/here.html" class="external-link">here</a></span><span class="op">(</span><span class="st">"../figures/02-plot_incidence.png"</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Error in knitr::include_graphics(here::here("../figures/02-plot_incidence.png")): Cannot find the file(s): "../../../figures/02-plot_incidence.png"</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html" class="external-link">include_graphics</a></span><span class="op">(</span><span class="st">"img/02-plot_incidence.png"</span><span class="op">)</span></span></code></pre></div>
+<p><img src="img/02-plot_incidence.png"><!-- --></p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html" class="external-link">include_graphics</a></span><span class="op">(</span><span class="st">"../figures/02-plot_incidence.png"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Error in knitr::include_graphics("../figures/02-plot_incidence.png"): Cannot find the file(s): "../figures/02-plot_incidence.png"</span></span></code></pre></div>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html" class="external-link">include_graphics</a></span><span class="op">(</span><span class="st">"../../figures/02-plot_incidence.png"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="../../figures/02-plot_incidence.png"><!-- --></p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://readr.tidyverse.org/reference/read_rds.html" class="external-link">read_rds</a></span><span class="op">(</span><span class="fu">here</span><span class="fu">::</span><span class="fu"><a href="https://here.r-lib.org//reference/here.html" class="external-link">here</a></span><span class="op">(</span><span class="st">"outputs/03-estimate_cfr.rds"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt;                        cfr severity_me severity_lo severity_hi</span></span>
 <span><span class="co">#&gt; 1 without delay correction   0.4615385   0.3632788   0.5620451</span></span>
