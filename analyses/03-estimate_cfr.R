@@ -40,16 +40,16 @@ ebola_filter <-
   
   ebola_outcome %>% 
   
-  # keep only the incidence rows with known outcome
-  # to avoid censoring bias of denominator
+  #' drop [unknown outcomes]
+  #' to correct for right-censoring bias in denominator
   filter(!is.na(outcome)) %>%
   
-  #' keep only [known outcomes]
-  #' - date of onset of "deaths" and "recover" events [cases]
-  #' - date of outcome of "death" events [deaths]
+  #' keep [known outcomes]
+  #' - for "death" events, keep only the date of "outcome" [deaths]
+  #' - for all events, keep the date of "onset" [cases]
   #' or
   #' drop only [unknown outcomes]
-  #' - date of outcome of "recover" events [not useful for CFR]
+  #' - for "recover" events, keep the date of "outcome" [not useful for CFR]
   filter(!(outcome == "Recover" & count_variable == "date_of_outcome"))
 
 ebola_filter
