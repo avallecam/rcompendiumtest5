@@ -22,7 +22,11 @@ Imports:
     readxl,
     tidyverse,
     writexl
-Remotes:
+Remotes: 
     epiverse-trace/cfr,
     epiverse-trace/epiparameter
 Config/Needs/website: rmarkdown
+VignetteBuilder: knitr
+Suggests: 
+    knitr,
+    rmarkdown

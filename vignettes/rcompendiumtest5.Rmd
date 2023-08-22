@@ -1,0 +1,45 @@
+---
+title: "Get started"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Get started}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE,
+                      comment  = "#>")
+```
+
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+here::here()
+```
+
+
+my text
+
+![incidence plot](../figures/02-plot_incidence.png)
+
+```{r}
+knitr::include_graphics(here::here("figures/02-plot_incidence.png"))
+```
+
+```{r,error=TRUE}
+knitr::include_graphics(here::here("../figures/02-plot_incidence.png"))
+```
+
+```{r,error=TRUE}
+knitr::include_graphics("../figures/02-plot_incidence.png")
+```
+
+```{r}
+read_rds(here::here("outputs/03-estimate_cfr.rds"))
+```
+
+
