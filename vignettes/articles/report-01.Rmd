@@ -26,7 +26,11 @@ my text
 knitr::include_graphics(here::here("figures/02-plot_incidence.png"))
 ```
 
-```{r}
+```{r,error=TRUE}
+knitr::include_graphics(here::here("../figures/02-plot_incidence.png"))
+```
+
+```{r,error=TRUE}
 knitr::include_graphics("../figures/02-plot_incidence.png")
 ```
 
