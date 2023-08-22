@@ -14,28 +14,18 @@ library(tidyverse)
 ```
 
 ```{r}
-here::here()
+getwd()
 ```
 
+```{r}
+# locations wrt articles folder
+fs::dir_copy(path = "../../figures/", new_path = "img/", overwrite = TRUE)
+```
 
 my text
 
-![incidence plot](../../figures/02-plot_incidence.png)
-
-```{r}
-knitr::include_graphics(here::here("figures/02-plot_incidence.png"))
-```
-
 ```{r,error=TRUE}
-knitr::include_graphics(here::here("../figures/02-plot_incidence.png"))
-```
-
-```{r,error=TRUE}
-knitr::include_graphics("../figures/02-plot_incidence.png")
-```
-
-```{r,error=TRUE}
-knitr::include_graphics("../../figures/02-plot_incidence.png")
+knitr::include_graphics("img/02-plot_incidence.png")
 ```
 
 ```{r}
