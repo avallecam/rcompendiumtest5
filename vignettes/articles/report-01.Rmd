@@ -13,9 +13,14 @@ knitr::opts_chunk$set(
 library(tidyverse)
 ```
 
+```{r}
+here::here()
+```
+
+
 my text
 
-![incidence plot](figures/02-plot_incidence.png)
+![incidence plot](../../figures/02-plot_incidence.png)
 
 ```{r}
 knitr::include_graphics(here::here("figures/02-plot_incidence.png"))
