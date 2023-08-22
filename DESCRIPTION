@@ -8,7 +8,7 @@ Authors@R: c(
            role    = c("aut", "cre", "cph"),
            email   = "avallecam@gmail.com",
            comment = c(ORCID = "0000-0002-7779-481X")))
-Description: A paragraph providing a full description of the project on Open science, Reproducible research and Sustainability of code for epidemic analysis with R packages
+Description: A paragraph providing a full description of the project on Open, Reproducible and Sustainable code for epidemic analysis with R packages
 URL: https://github.com/avallecam/rcompendiumtest5, https://avallecam.github.io/rcompendiumtest5/
 BugReports: https://github.com/avallecam/rcompendiumtest5/issues
 License: GPL (>= 2)

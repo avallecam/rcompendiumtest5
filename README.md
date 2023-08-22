@@ -10,9 +10,8 @@
 [![Dependencies](https://img.shields.io/badge/dependencies-2/95-green?style=flat)](#)
 <!-- badges: end -->
 
-Research Compendium of the project on Open science, Reproducible
-research and Sustainability of code for epidemic analysis with R
-packages.
+Research Compendium of the project on Open, Reproducible and Sustainable
+code for epidemic analysis with R packages.
 
 ### How to cite
 
