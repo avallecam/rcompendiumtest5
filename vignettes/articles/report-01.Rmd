@@ -27,6 +27,10 @@ knitr::include_graphics(here::here("figures/02-plot_incidence.png"))
 ```
 
 ```{r}
+knitr::include_graphics("../figures/02-plot_incidence.png")
+```
+
+```{r}
 read_rds(here::here("outputs/03-estimate_cfr.rds"))
 ```
 
