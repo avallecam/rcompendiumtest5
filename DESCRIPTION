@@ -1,6 +1,6 @@
 Package: rcompendiumtest5
 Type: Package
-Title: Research Compendium for Sustainable Analysis
+Title: Research Compendium for Epidemic Analysis
 Version: 0.0.0.9000
 Authors@R: c(
     person(given   = "Andree",
