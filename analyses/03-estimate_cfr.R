@@ -119,8 +119,8 @@ ebola_cfr_correct
 
 cfr_table <- 
   bind_rows(
-    "without delay correction"=ebola_cfr,
-    "with delay correction" = ebola_cfr_correct, 
+    "naive"=ebola_cfr,
+    "corrected" = ebola_cfr_correct, 
     .id = "cfr"
   )
 
