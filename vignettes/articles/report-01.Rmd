@@ -1,5 +1,6 @@
 ---
 title: "report-01"
+bibliography: references.bib
 ---
 
 ```{r, include = FALSE}
@@ -9,22 +10,55 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r}
+```{r,echo=FALSE}
+#' this chunk makes a copy of
+#' the content in the "figures/" directory
+#' to a new "figures/" folder 
+#' inside the "vignettes/articles" directory
+#' 
+#' warning: filepaths are relative to 
+#' the "vignettes/articles/" directory
+
+fs::dir_copy(
+  path = "../../figures/", 
+  new_path = "figures/", 
+  overwrite = TRUE
+)
+
+#' [NOW YOU MUST]
+#' add to the .gitignore file this line:
+#' 
+#' vignettes/articles/figures/
+#' 
+```
+
+```{r,warning=FALSE,message=FALSE,echo=FALSE}
 library(tidyverse)
 ```
 
-```{r,echo=FALSE}
-# locations wrt articles folder
-fs::dir_copy(path = "../../figures/", new_path = "figures/", overwrite = TRUE)
-```
+## Introduction
 
-my text
+The case fatality ratio (CFR), the ratio of deaths from an infectious disease to the number of cases, provides an assessment of virulence [@Nishiura2009].
+
+## Methods
+
+We collect data on 169 individuals and...
+
+## Results
+
+We found that...
 
 ```{r,error=TRUE}
 knitr::include_graphics("figures/02-plot_incidence.png")
 ```
 
 ```{r}
-read_rds(here::here("outputs/03-estimate_cfr.rds"))
+result <- readr::read_rds(here::here("outputs/03-estimate_cfr.rds"))
+result
 ```
 
+## Discussion
+
+Our results show that the corrected CFR is `r result %>% filter(cfr == "corrected") %>% pull("severity_me")`
+
+## References
