@@ -1,3 +1,5 @@
+^renv$
+^renv\.lock$
 ^rcompendiumtest5\.Rproj$
 ^\.Rproj\.user$
 ^\.DS_Store$
@@ -14,3 +16,4 @@
 ^docs$
 ^pkgdown$
 ^vignettes/articles$
+^\.Rprofile$

@@ -23,3 +23,5 @@ docs
 
 # avoid copied figures for vignette
 vignettes/articles/figures/
+renv/
+.Rprofile
