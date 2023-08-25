@@ -587,11 +587,10 @@
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteRepo": "epiparameter",
       "RemoteUsername": "epiverse-trace",
-      "RemotePkgRef": "epiverse-trace/epiparameter",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "9c2d78eabcb569be24b4b9f23eb057458319f4ba",
+      "RemoteRepo": "epiparameter",
+      "RemoteRef": "main",
+      "RemoteSha": "59b3fe7b213f7bb7b4a9a4af1c464f871a336eae",
       "Requirements": [
         "R",
         "checkmate",
@@ -600,7 +599,7 @@
         "stats",
         "utils"
       ],
-      "Hash": "14723d863b467d8aded752fd868ad40f"
+      "Hash": "97aecd69f41bd1fbf4adbd7547d2975d"
     },
     "evaluate": {
       "Package": "evaluate",
@@ -1614,9 +1613,9 @@
     },
     "rmarkdown": {
       "Package": "rmarkdown",
-      "Version": "2.23",
+      "Version": "2.24",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "bslib",
@@ -1634,7 +1633,7 @@
         "xfun",
         "yaml"
       ],
-      "Hash": "79f14e53725f28900d936f692bfdd69f"
+      "Hash": "3854c37590717c08c32ec8542a2e0a35"
     },
     "roxygen2": {
       "Package": "roxygen2",
