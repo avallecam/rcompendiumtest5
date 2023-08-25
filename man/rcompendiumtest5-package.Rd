@@ -4,14 +4,15 @@
 \name{rcompendiumtest5-package}
 \alias{rcompendiumtest5}
 \alias{rcompendiumtest5-package}
-\title{rcompendiumtest5: The Title of the Project}
+\title{rcompendiumtest5: Research Compendium for Epidemic Analysis}
 \description{
-A paragraph providing a full description of the project (on several lines...)
+A paragraph providing a full description of the project on Open, Reproducible and Sustainable code for epidemic analysis with R packages
 }
 \seealso{
 Useful links:
 \itemize{
   \item \url{https://github.com/avallecam/rcompendiumtest5}
+  \item \url{https://avallecam.github.io/rcompendiumtest5/}
   \item Report bugs at \url{https://github.com/avallecam/rcompendiumtest5/issues}
 }
 
