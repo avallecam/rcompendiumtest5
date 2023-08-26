@@ -1,0 +1,9 @@
+
+bibentry(bibtype = "Misc",
+         key = "vallecampos",
+         title = "rcompendiumtest5: Research Compendium for Epidemic Analysis",
+         author = person(given = "Andree",
+                         family = "Valle-Campos"),
+         url = "https://avallecam.github.io/rcompendiumtest5/",
+         abstract = "A paragraph providing a full description of the project on Open, Reproducible and Sustainable code for epidemic analysis with R packages",
+         version = "0.0.0.9000")
