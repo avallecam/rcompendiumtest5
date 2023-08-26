@@ -18,17 +18,25 @@ code for epidemic analysis with R packages.
 Please cite this compendium as in [Citing
 rcompendiumtest5](https://avallecam.github.io/rcompendiumtest5/authors.html#citation).
 
-    #> <p>Valle-Campos A (2023).
-    #> <em>rcompendiumtest5: Research Compendium for Sustainable Analysis</em>.
-    #> https://github.com/avallecam/rcompendiumtest5, https://avallecam.github.io/rcompendiumtest5/. 
-    #> </p>
-
-    #> @Manual{,
-    #>   title = {rcompendiumtest5: Research Compendium for Sustainable Analysis},
-    #>   author = {Andree Valle-Campos},
-    #>   year = {2023},
-    #>   note = {https://github.com/avallecam/rcompendiumtest5, https://avallecam.github.io/rcompendiumtest5/},
-    #> }
+``` r
+utils::readCitationFile(file = "inst/CITATION",
+                        meta = packageDescription("cffr"))
+#> 
+#> To cite package 'cffr' in publications use:
+#> 
+#>   Valle-Campos A (????). "rcompendiumtest5: Research Compendium for
+#>   Epidemic Analysis." <https://avallecam.github.io/rcompendiumtest5/>.
+#> 
+#> A BibTeX entry for LaTeX users is
+#> 
+#>   @Misc{vallecampos,
+#>     title = {rcompendiumtest5: Research Compendium for Epidemic Analysis},
+#>     author = {Andree Valle-Campos},
+#>     url = {https://avallecam.github.io/rcompendiumtest5/},
+#>     abstract = {A paragraph providing a full description of the project on Open, Reproducible and Sustainable code for epidemic analysis with R packages},
+#>     version = {0.0.0.9000},
+#>   }
+```
 
 ### Content
 

@@ -39,6 +39,11 @@ cat(pkgdown:::data_citations()$html)
 cat(pkgdown:::data_citations()$bibtex)
 ```
 
+```{r}
+utils::readCitationFile(file = "inst/CITATION",
+                    	meta = packageDescription("cffr"))
+```
+
 
 ### Content
 
